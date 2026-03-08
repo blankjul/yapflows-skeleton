@@ -1,0 +1,27 @@
+# Ignore everything by default
+*
+
+# Always track this file
+!.gitignore
+
+# Whitelist safe directories
+!agents/
+!agents/**
+!environments/
+!environments/**
+!knowledge/
+!knowledge/**
+!skills/
+!skills/**
+!tasks/
+!tasks/**
+!tools/
+!tools/**
+
+# Re-exclude secrets even inside whitelisted directories
+**/.env
+**/.env.*
+**/cookies
+**/token*
+**/credential*
+**/secret*

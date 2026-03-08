@@ -1,0 +1,6 @@
+httpx
+markdownify
+playwright
+playwright-stealth
+yfinance
+browser-cookie3

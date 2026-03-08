@@ -1,0 +1,4 @@
+# Used by web/fetch.py (called by this skill)
+httpx
+beautifulsoup4
+markdownify

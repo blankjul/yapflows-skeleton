@@ -1,0 +1,6 @@
+{
+  "id": "claude-cli",
+  "name": "Claude CLI",
+  "provider_id": "claude-cli",
+  "model": "claude-haiku-4-5-20251001"
+}

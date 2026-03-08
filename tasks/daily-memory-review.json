@@ -1,0 +1,11 @@
+{
+  "name": "daily-memory-review",
+  "cron": "0 0 * * *",
+  "agent_id": "assistant",
+  "environment_id": null,
+  "prompt": "You are running a nightly memory consolidation pass. Work silently through these steps:\n\n1. **Scan today's conversations**\n   Use bash to list ~/.yapflows/chats/, find sessions modified today, and read their content.\n   Look for new facts, decisions, preferences, or context worth remembering long-term.\n\n2. **Review current memory**\n   Read ~/.yapflows/memory/default.md.\n   Note what is already captured so you don't duplicate.\n\n3. **Update memory**\n   - Add genuinely new facts to the right place.\n   - Remove or correct anything outdated.\n   - If default.md exceeds ~50 lines: move the bulkiest section(s) to a topic file\n     (e.g. ~/.yapflows/memory/projects.md) and replace the section in default.md with\n     a one-line reference: `→ see memory/projects.md`.\n   - Keep default.md under 60 lines total.\n\n4. **Write changes**\n   Use bash to write any updated files. Do not print the full file contents — just report\n   what you changed (e.g. \"Added 2 facts to default.md; moved Finance section to finance.md\").",
+  "enabled": true,
+  "session_mode": "new",
+  "session_alias": null,
+  "target_session_alias": null
+}

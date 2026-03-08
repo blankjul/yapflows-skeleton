@@ -1,0 +1,6 @@
+{
+  "id": "openrouter-haiku",
+  "name": "OpenRouter",
+  "provider_id": "openrouter",
+  "model": "anthropic/claude-haiku-4.5"
+}
